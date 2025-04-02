@@ -20,7 +20,7 @@ var reasonsiloveyou = [
     "i could listen to you talk about anything forever",
 ]
 console.log("hey theree :>")
-console.log("current list: reasonsiloveyou.length")
+console.log("current list: " + reasonsiloveyou.length)
 
 // Randomize reasonsiloveyou so it looks different every time :>
 for (var i = reasonsiloveyou.length - 1; i > 0; i--) {
