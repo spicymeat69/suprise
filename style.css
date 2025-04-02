@@ -1,0 +1,176 @@
+.header {
+    font-size: 600%;
+    font-weight: 800;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);   left: 50%;
+    font-family: "Open Sans", sans-serif; 
+    color: rgb(255, 255, 255);
+    position: relative;
+    text-wrap: balance;
+    text-align: center;
+}
+
+  .button-container {
+    display: grid;
+    grid-template-columns: repeat(0, minmax(150px, 1fr));
+    gap: 8rem;
+    justify-items: center;
+}
+
+.heartbutton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.heartbutton .heartbutton-back {
+    text-align: center;
+    font-size: 100%;
+    color: #333;
+}
+
+
+
+  /* From Uiverse.io by LilaRest */ 
+.heartbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 22px;
+    box-shadow: rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #e8e8e8;
+    border-color: #ffe2e2;
+    border-style: solid;
+    border-width: 9px;
+    border-radius: 35px;
+    transition: transform 400ms cubic-bezier(.68,-0.55,.27,2.5), 
+                border-color 400ms ease-in-out,
+                background-color 400ms ease-in-out;
+    word-spacing: -2px;
+    scale: 2.3;
+    width: 16rem;
+    height: 5rem;
+    perspective: 1000px; /* Enable 3D effect */
+    position: relative;
+}
+
+.heartbutton-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+    font-family: "Open Sans", sans-serif;
+}
+
+.heartbutton.clicked .heartbutton-inner {
+    transform: rotateY(180deg);
+}
+
+.heartbutton .heartbutton-front,
+.heartbutton .heartbutton-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back side when not visible */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+}
+
+.heartbutton .heartbutton-front {
+    background-color: #e8e8e8;
+}
+
+.heartbutton .heartbutton-back {
+    background-color: inherit;
+    transform: rotateY(180deg);
+    color: #fa7272;
+    overflow: visible;
+    font-size: 100%;
+    font-weight: 500;
+}
+
+.heartbutton svg {
+    fill: rgb(255, 110, 110);
+    width: 32px;
+    height: 32px;
+}
+  
+  @keyframes movingBorders {
+    0% {
+      border-color: #fce4e4;
+    }
+  
+    50% {
+      border-color: #ffd8d8;
+    }
+  
+    90% {
+      border-color: #fce4e4;
+    }
+  }
+  
+  .heartbutton:hover {
+    background-color: #eee;
+    transform: scale(105%);
+    animation: movingBorders 3s infinite;
+  }
+  
+  .heartbutton:hover svg {
+    transform: scale(105%);
+    border-color: #ffd8d8;
+    animation: beatingHeart 1.2s infinite;
+  }
+  
+  @keyframes beatingHeart {
+    0% {
+      transform: scale(1);
+    }
+  
+    15% {
+      transform: scale(1.15);
+    }
+  
+    30% {
+      transform: scale(1);
+    }
+  
+    45% {
+      transform: scale(1.15);
+    }
+  
+    60% {
+      transform: scale(1);
+    }
+  }
+
+
+  .manymore {
+    color: #fff;
+    margin-top: 18%;
+    position: relative;
+    font-size: 200%;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+  }
+
+  .final-note {
+    color: #fff;
+    font-size: 200%;
+    font-family: 'Open Sans', sans-serif;
+    position: relative;
+    text-wrap: balance;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+
+  .text_red {
+    color: red;
+  }
+
+
